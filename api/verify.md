@@ -4,5 +4,5 @@ This is an HTTP **get** endpoint. This verifies that the IP connecting to Blacke
 Response structure:   
 ```
 Object
-    error : bool - Is the user using a proxy?
+    error : bool - Is the user using a proxy? (if this is true, the user cannot access Blacket)
 ```
