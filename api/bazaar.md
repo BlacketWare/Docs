@@ -1,4 +1,4 @@
-### bazaar
+### /worker/bazaar/
 This is an HTTP **get** request that returns the bazaar.
 Passing an item (such as Death) using the ?paramater= Express returns a specific item. (example: https://blacket.org/worker/bazaar?item=Death)
 
@@ -15,7 +15,7 @@ Object
             date    : int - Date.now() of when the offer was posted.
 ```
 
-#### /bazaar/buy
+#### /worker/bazaar/buy
 This is an HTTP **post** request that allows you to buy a bazaar item.
 
 Request structure:
@@ -30,7 +30,7 @@ Object
     error   : bool - Has an error occured? If this is false, you have purchased it.
 ```
 
-#### /bazaar/list
+#### /worker/bazaar/list
 This is an HTTP **post** request that allows you to list an item on the bazaar.
 
 Request structure:
@@ -44,4 +44,19 @@ Response structure:
 ```
 Object
     error   : bool - Has an error occured? If this is false, you have listed it.
+```
+
+#### /worker/bazaar/remove
+This is an HTTP **post** request that allows you to remove one of your bazaar posts.
+
+Request structure:
+```
+Object
+    id  : int - the ID of the offer to remove.
+```
+
+Response structure:
+```
+Object
+    error   : bool - Has an error occured? If this is false, you have removed it.
 ```

@@ -1,4 +1,4 @@
-## ```/worker/open```
+## ```/worker/use```
 This is an HTTP **post** endpoint that lets you use a Booster.
 
 Request structure:   

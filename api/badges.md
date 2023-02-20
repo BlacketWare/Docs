@@ -1,5 +1,7 @@
 ## ```/worker/badges```
 This is an HTTP **get** request that lets you get all available badges.
+
+Response structure:
 ```
 Object
     error : bool - Has an error occurred?
