@@ -1,5 +1,5 @@
 ### join
-Join a chatroom. Will be later used for channels, the current room is "global".
+Join a chat "room".
 
 Onmessage structure:
 ```
