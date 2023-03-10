@@ -24,9 +24,9 @@ Object
         modified  : int - A JS timestamp of when the account was last "online." Bypassable.
         mute      : Object<> - Similar to ban, information on the user's mute. Sends a blank object if they aren't muted.
         role      : string - The user's role.
-        tokens   : int - The amount of tokens a user has.
-        username : string - The user's username.
-        verified: bool - If the user's form has been accepted (or if they can play.)
+        tokens    : int - The amount of tokens a user has.
+        username  : string - The user's username.
+        verified  : bool - If the user's form has been accepted (or if they can play.)
 ```
 
 #### Structure of /worker/user/you or /worker/user/
@@ -51,11 +51,12 @@ Object
             messages  : int - The amount of messages the user has sent.
         modified  : int - A JS timestamp of when the account was last "online." Bypassable.
         mute      : Object<> - Similar to ban, information on your mute. Sends a blank object if you aren't muted.
+        opt       : bool - If you have two factor auth enabled.
         perms     : array<string> - An array of the user's permissions. "*" means all permissions.
         role      : string - The user's role.
         settings : object - Settings from the settings page.
             requests : bool - If the user is accepting trade requests.
         tokens   : int - The amount of tokens a user has.
         username : string - The user's username.
-        verified: bool - If the user's form has been accepted (or if they can play.)
+        verified : bool - If the user's form has been accepted (or if they can play.)
 ```
