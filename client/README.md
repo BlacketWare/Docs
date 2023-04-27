@@ -48,8 +48,11 @@ blacket.socket // the websocket used, idk why this is global
     // here's a get-started on websockets: https://javascript.info/websocket
     // to externally connect to the socket, try https://npmjs.com/package/ws
 
-startLoading // add the loading modal
-stopLoading // remove the loading modal
+blacket.startLoading // add the loading modal
+blacket.stopLoading // remove the loading modal
+
+blacket.toasts // array of popup toasts, as they are queued.
+blacket.createToast // function adding a toast to the queue
 ```
 
 All of those are defined by Blacket's [lib/js/all.js](https://blacket.org/lib/js/all.js).<br>
@@ -76,3 +79,6 @@ lastRulesVersion // figures out if it should display rules based on the last ver
 lastPost // timestamp of the last post the user saw, to determine if it should open news panel
 chatColor // only seen on plus users, a variable that detects the user's default color to make their messages in chat
 ```
+
+### other oddities
+in all.js, 'envi' is set to always have a heart next to it. xotic is a SIMP!
