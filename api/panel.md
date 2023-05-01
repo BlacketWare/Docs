@@ -54,7 +54,7 @@ Suprisingly, you can't set the date in a request.<br>
 The response for this is the normal error bool.
 
 ### /worker/panel/info
-This is a simple **GET** request returning server data.
+This is a **GET** request returning server data.
 
 Response structure:
 ```
@@ -77,4 +77,29 @@ Object
             users   : int - users on blacket
             blooks  : int - the number of unique blooks
             packs   : int - the number of different packs
+```
+
+### /worker/panel/console
+This is a **GET** request returning console logs.
+Response structure:
+```
+Object
+    error   : bool - has an error occured?
+    logs    : Object - the logs returned. little info is known as to the structure of this.
+```
+
+### /worker/panel/run
+This is a **POST** request allowing owners to run code.
+
+Request structure:
+```
+Object
+    command: string - the command
+```
+
+Response structure:
+```
+Object
+    error   : bool - has an error occured?
+    logs    : Object - the new console logs. little info is known as to the structure of this.
 ```
