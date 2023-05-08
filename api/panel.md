@@ -10,11 +10,11 @@ Response structure:
 ```
 Object
     error   : bool - Has an error occurred?
-    forms   : Array<username : string, age : int, discord : string, body : string> - The forms.
+    forms   : Array<username : string, age : int, discord : string, body : string> - the forms
         Object - an example object, has no name
-            username   : string - the name of the applicant.
-            age        : int - the user's age.
-            discord    : string - the user's discord.
+            username   : string - the name of the applicant
+            age        : int - the user's age
+            discord    : string - the user's discord
             body       : string - the user's play reason
     pages   : int - how many pages 
     page    : int - the current page
@@ -23,6 +23,25 @@ Object
 
 Using `?username=` is the way to search through forms.
 
+#### /worker/panel/users
+The painful, disorganized endpoint to manage or punish users.<br>
+It's a **POST** request with response tree:
+
+Request structure:
+```
+Object
+    action : string - either "mute" or "ban"
+    user   : int - the id of the user to punish
+    reason : string - the mute reason
+    time   : string - the time (in minutes) to mute the user for
+```
+
+Responds with the default "error" and optional "reason."
+
+```
+Object
+    error : bool - has an error occurred?
+    reason: optional<string> - the error reason, if an error occurred
 
 #### /worker/panel/forms/{page}
 Another **GET** requester, returns the same structure as the root, except only returning the specified page number.<br>
