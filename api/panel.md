@@ -147,7 +147,6 @@ Response structure:
 Object
     error   : bool - has an error occured?
     logs    : Array<string> - the logs returned.
-        /* note from acai: i'm inferring the response, might not be accurate, i'm not an owner anymore. */
 ```
 
 ### /worker/panel/run
