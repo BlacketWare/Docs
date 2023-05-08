@@ -42,6 +42,10 @@ Responds with the default "error" and optional "reason."
 Object
     error : bool - has an error occurred?
     reason: optional<string> - the error reason, if an error occurred
+```
+
+<br>
+Note: mute/ban information is obtained from the [/worker/user](/api/user.md) endpoint.
 
 #### /worker/panel/forms/{page}
 Another **GET** requester, returns the same structure as the root, except only returning the specified page number.<br>
