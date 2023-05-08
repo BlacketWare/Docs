@@ -111,6 +111,8 @@ Response structure:
 Object
     error  : bool - has an error occurred?
 ```
+    
+Suprisingly, you can't set the date in a request.<br>
 
 ### /worker/panel/info
 This is a **GET** request returning server data.
