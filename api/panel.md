@@ -9,8 +9,8 @@ The root link is a **GET** request with response tree:
 Response structure:
 ```
 Object
-    error   : bool - Has an error occured?
-    forms   : array (filled with objects) - The forms.
+    error   : bool - Has an error occurred?
+    forms   : Array<username : string, age : int, discord : string, body : string> - The forms.
         Object - an example object, has no name
             username   : string - the name of the applicant.
             age        : int - the user's age.
@@ -24,19 +24,56 @@ Object
 Using `?username=` is the way to search through forms.
 
 
-#### /worker/panel/forms/{int}
-Another **GET** requester, returns the same structure as the root, except following the specific page number.<br>
+#### /worker/panel/forms/{page}
+Another **GET** requester, returns the same structure as the root, except only returning the specified page number.<br>
 It's very disorganized.
+```
+Object
+    error   : bool - Has an error occured?
+    forms   : Array<username : string, age : int, discord : string, body : string> - The forms.
+        Object - an example object, has no name
+            username   : string - the name of the applicant.
+            age        : int - the user's age.
+            discord    : string - the user's discord.
+            body       : string - the user's play reason
+    pages   : int - how many pages 
+    page    : int - the current page
+    total   : int - the total forms
+```
 
 #### /worker/panel/forms/accept/{username}
 This is a **POST** request but has nothing with the req, returns only the typical error boolean.
 
+Request structure:
+```
+Object<empty>
+    /* this object has no values. the post request is an empty JSON object */
+```
+
+Response structure:
+```
+Object
+    error   : bool - Has an error occurred?
+```
+
 #### /worker/panel/forms/reject/{username}
-This is a **POST** request but has nothing with the req, returns only the typical error boolean.
+This is a **POST** request but has nothing with the request, returns only the typical error boolean.
+
+Request structure:
+```
+Object<empty>
+    /* this object has no values. the post request is an empty JSON object */
+```
+
+Response structure:
+```
+Object
+    error   : bool - Has an error occured?
+```
 
 
 ### /worker/panel/news
-This isn't as messy as forms (sighs), it's one **POST** request with another 'type' string.
+This isn't as messy as forms (sigh), it's one **POST** request with another 'type' string.
 
 Request structure:
 ```
@@ -50,8 +87,11 @@ Object
     image  : string - the image src of the post to create, if type = create
 ```
 
-Suprisingly, you can't set the date in a request.<br>
-The response for this is the normal error bool.
+Response structure:
+```
+Object
+    error  : bool - has an error occurred?
+```
 
 ### /worker/panel/info
 This is a **GET** request returning server data.
@@ -85,7 +125,8 @@ Response structure:
 ```
 Object
     error   : bool - has an error occured?
-    logs    : Object - the logs returned. little info is known as to the structure of this.
+    logs    : Array<string> - the logs returned.
+        /* note from acai: i'm inferring the response, might not be accurate, i'm not an owner anymore. */
 ```
 
 ### /worker/panel/run
