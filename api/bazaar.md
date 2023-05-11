@@ -1,4 +1,4 @@
-### /worker/bazaar/
+### ```/worker/bazaar/```
 This is an HTTP **get** request that returns the bazaar.
 Passing an item (such as Death) using the ?paramater= Express returns a specific item. (example: https://blacket.org/worker/bazaar?item=Death)
 

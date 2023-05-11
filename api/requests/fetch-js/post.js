@@ -10,7 +10,8 @@ let body = { // Insert the form body here.
   let cookie = 's%htregfwrtjyregfgtjyrefwr45hrtegfw456i7trefw'
 
   ^^ the cookie would be longer
-  to get a valid cookie, run this in your browser console:
+  note that cookies can no longer be grabbed by document.cookie
+    > docs: https://expressjs.com/en/resources/middleware/session.html#:~:text=the%20maxAge%20option.-,cookie.httpOnly,-Specifies%20the%20boolean
 
   console.log(document.cookie.split('=')[1])
 

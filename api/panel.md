@@ -168,3 +168,5 @@ Object
     error   : bool - has an error occured?
     logs    : Object - the new console logs. little info is known as to the structure of this.
 ```
+
+### these docs are incomplete.

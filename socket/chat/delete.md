@@ -1,6 +1,6 @@
 ### delete
 Delete a message with its ID.<br>
-Only emittable by admins.
+Only emittable by users with the delete_messages permission (mod+).
 
 Onmessage structure:   
 ```

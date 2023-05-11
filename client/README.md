@@ -81,4 +81,5 @@ chatColor // only seen on plus users, a variable that detects the user's default
 ```
 
 ### other oddities
-in all.js, 'envi' is set to always have a heart next to it. xotic is a SIMP!
+- in all.js, 'envi' is set to always have a heart next to it. xotic is a SIMP!
+- xotic uses the [httpOnly](https://expressjs.com/en/resources/middleware/session.html#:~:text=the%20maxAge%20option.-,cookie.httpOnly,-Specifies%20the%20boolean) to prevent cookie grabbing. phishing pages or directly getting someone's password are now the only ways to "hack" someone.

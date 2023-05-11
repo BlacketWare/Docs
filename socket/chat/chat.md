@@ -1,5 +1,6 @@
 ### chat
-Send or recieve messages.
+Send or recieve messages.<br>
+Emit note: Adaptive? ratelimit of 1s when in normal chat (not trade).
 
 Onmessage structure:   
 ```

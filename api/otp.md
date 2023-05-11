@@ -1,4 +1,4 @@
-### /worker/otp/
+### ```/worker/otp/```
 This is an HTTP request tree that includes OTP, or 2FA.
 ```
 
