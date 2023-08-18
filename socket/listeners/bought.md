@@ -1,8 +1,7 @@
 ### bought
 A listener on every Blacket page for a Bazaar purchase.<br>
-This is a message emitted only from the server.<br>
 <br>
-Structure:
+Data Structure:
 ```
 Object
     data  : Object - information about the purchase
