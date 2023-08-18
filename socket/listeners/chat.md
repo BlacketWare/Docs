@@ -1,8 +1,7 @@
 ### chat
-Send or recieve messages.<br>
-Emit note: Adaptive? ratelimit of 1s when in normal chat (not trade).
+Recieve messages.<br>
 
-Onmessage structure:   
+Data structure:   
 ```
 Object
     error    : bool - Is this reporting a chat-related error (true), or just a new message (false).
