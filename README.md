@@ -1,19 +1,13 @@
 <div align="center">
-  <h1> i am done with blacket. </h1>
-  <h3> this repo has been archived. do not dm me or contact me about blacket. let me be. </h3>
+  <h1>Blacket Docs</h1>
+  <p>This is the full documentation on Blacket's API, client, and socket.</p>
+  <p>Examples are provided along with notes to help you along the way.</p>
   <br>
+  <h3>Usage</h3>
+  <p>All of the information and examples in this repository is free to use.</p>
+  <p>Everything you create should follow Blacket's <a href="https://blacket.org/discord">Use Expectations</a> and <a href="https://blacket.org/terms">Terms of Service</a>.</p>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <h3>Contributors</h3>
+  <p><b>@xthonk</b> - most of the writeups, maintainment</p>
+  <p><b>@probablyacai</b> - project inspiration, base, and contribution</p>
 </div>
-
-# Blacket-Docs
-This is the full documentation on Blacket's API, client, and socket.<br>
-You can use this to make Blacket packages, bots, scripts, and more.<br>
-This is all for educational purpose only. Please do not abuse the information provided or your Blacket account is subject to termination.<br>
-Make sure everything you make follow's Blacket's Use Expectations (see [discord server](https://blacket.org/discord), #rules channel) and [Terms of Service](https://blacket.org/terms).
-
-credit to myTrtl (now deleted) by [acai](https://acaiberii.win) for the project base.<br>
-another thanks to acai for contributing :)
