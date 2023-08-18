@@ -40,6 +40,7 @@ blacket.getParameter // function used to check if a purchase has been made.
 blacket.requests // object
     get // send a get request to a URL
     post // send a post request to a URL
+    upload // sends an upload request, used for chat
 
 blacket.socket // the websocket used, idk why this is global
     emit // function added by xotic making it function like socket.io, sends data to server
@@ -67,7 +68,8 @@ news // an array of news posts
 After that, you've hit all the variables on most pages.<br>
 Each page has some specific variables that make sense to the page.<br>
 For example, the Stats page has `blacket.getUser()`. The Chat pages has `blacket.appendMessage()`.<br>
-All of these functions can be used on the client.
+All of these functions can be used on the client.<br>
+Literally just type 'blacket' into the Developer Console for a list.
 
 ### localStorage
 Blacket is very simple due to this object and requires little documentation, yet it does use one other variable. `localStorage`.<br>
@@ -81,5 +83,5 @@ chatColor // only seen on plus users, a variable that detects the user's default
 ```
 
 ### other oddities
-- in all.js, 'envi' is set to always have a heart next to it. xotic is a SIMP!
-- xotic uses the [httpOnly](https://expressjs.com/en/resources/middleware/session.html#:~:text=the%20maxAge%20option.-,cookie.httpOnly,-Specifies%20the%20boolean) to prevent cookie grabbing. phishing pages or directly getting someone's password are now the only ways to "hack" someone.
+- async is almost never used by xotic (all of the async code is acai's), so there's a mess of callbacks.
+- jquery is used for some stupid reason, hopefully this is removed later.
