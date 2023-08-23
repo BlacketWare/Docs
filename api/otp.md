@@ -1,6 +1,5 @@
 ### ```/worker/otp/```
 This is an HTTP request tree that includes OTP, or 2FA.
-```
 
 #### /worker/otp/generate
 This is an HTTP **get** request that generates a 2FA QR code.
