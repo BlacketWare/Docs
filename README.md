@@ -1,3 +1,6 @@
+> [!WARNING]
+> Much of the information here is outdated. We no longer have the resources nor time to update these docs.
+
 <div align="center">
   <h1>Blacket Docs</h1>
   <p>This is the full documentation on Blacket's API, client, and socket.</p>
